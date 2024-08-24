@@ -1,0 +1,59 @@
+body { 
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1a1a1a, #333);
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.profile-container {
+    background: #444;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.profile img { 
+    width: 150px;
+    max-width: 150px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+hr {
+    border: 1px solid #555;
+    margin: 20px 0;
+}
+
+.upload-label {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.upload-label:hover {
+    background-color: #218838;
+}
+
+.upload-label i {
+    margin-right: 8px;
+}
+
+input[type="file"] {
+    display: none;
+}
